@@ -116,6 +116,9 @@
     <string name="global_action_restart_download_progress">Restarting to download mode\u2026</string>
     <!-- Button to restart SystemUI, within the Restart Options dialog -->
     <string name="global_action_restart_systemui">SystemUI</string>
+   
+    <!-- Wifi Standard. -->
+    <string name="status_bar_wifi_standard">Wifi Standard</string>
 
     <!-- Flashlight Strength -->
     <string name="flashlight_strength_title">Flashlight Strength</string>
