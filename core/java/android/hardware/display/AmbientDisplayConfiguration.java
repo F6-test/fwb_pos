@@ -101,7 +101,8 @@ public class AmbientDisplayConfiguration {
                 || tapGestureEnabled(user)
                 || doubleTapGestureEnabled(user)
                 || quickPickupSensorEnabled(user)
-                || screenOffUdfpsEnabled(user);
+                || screenOffUdfpsEnabled(user)
+                || pulseOnCustomDozeEventEnabled(user);
     }
 
     /** @hide */
@@ -174,6 +175,12 @@ public class AmbientDisplayConfiguration {
     /** @hide */
     public boolean doubleTapSensorAvailable() {
         return !TextUtils.isEmpty(doubleTapSensorType());
+    }
+
+    /** @hide */
+    public boolean pulseOnCustomDozeEventEnabled(int user) {
+        return boolSetting(Settings.Secure.DOZE_TRIGGER_DOUBLETAP, user, 0)
+                && pulseOnNotificationAvailable();
     }
 
     /** @hide */

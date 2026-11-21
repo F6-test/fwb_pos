@@ -11186,6 +11186,14 @@ public final class Settings {
         public static final String DOZE_DOUBLE_TAP_GESTURE = "doze_pulse_on_double_tap";
 
         /**
+         * Whether a double tap to wake should only pulse the ambient display instead of waking
+         * the device.
+         * @hide
+         */
+        @Readable
+        public static final String DOZE_TRIGGER_DOUBLETAP = "doze_trigger_doubletap";
+
+        /**
          * Whether the device should respond to the SLPI tap gesture.
          * @hide
          */
